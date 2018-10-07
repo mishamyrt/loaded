@@ -6,7 +6,9 @@ module.exports = {
     },
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "amd": true,
+        "node": true,
     },
     "rules": {
         "arrow-parens": ["error", "always"],

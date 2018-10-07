@@ -1,27 +1,12 @@
-import { getBackgroundImage } from './helpers'
+const { getImagesUrl } = require('./helpers')
 
-const waitForImage = (url) => {
+const imageLoaded = (url) => {
     return new Promise((resolve) => {
         const image = new Image()
         image.onload = resolve
         image.onerror = resolve
         image.src = url
     })
-}
-
-const getImagesUrl = (nodes) => {
-    const images = []
-    for (const node of nodes) {
-        if (node.tagName === 'IMG') {
-            images.push(node.getAttribute('src'))
-        } else {
-            const url = getBackgroundImage(node)
-            if (url) {
-                images.push(url)
-            }
-        }
-    }
-    return images
 }
 
 const imagesLoaded = (node) => {
@@ -34,7 +19,7 @@ const imagesLoaded = (node) => {
         } else {
             const promises = []
             images.forEach((url) => {
-                promises.push(waitForImage(url))
+                promises.push(imageLoaded(url))
             })
             Promise.all(promises).then(() => {
                 resolve(images.length)
@@ -56,4 +41,8 @@ const nodeLoaded = (selector) => {
 }
 
 
-export { imagesLoaded, nodeLoaded }
+module.exports = {
+    imagesLoaded,
+    imageLoaded,
+    nodeLoaded,
+}
