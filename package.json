@@ -1,7 +1,7 @@
 {
   "name": "mishamyrt-loaded",
   "version": "1.0.0",
-  "description": "Simple function that will let you know that all the pictures have loaded",
+  "description": "Small library without dependencies that lets you know that the content has loaded",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
