@@ -15,14 +15,14 @@ const imagesLoaded = (node) => {
         checkableNodes.push(node)
         const images = getImagesUrl(checkableNodes)
         if (images.length === 0) {
-            resolve(0)
+            resolve(node)
         } else {
             const promises = []
             images.forEach((url) => {
                 promises.push(imageLoaded(url))
             })
             Promise.all(promises).then(() => {
-                resolve(images.length)
+                resolve(node)
             })
         }
     })
