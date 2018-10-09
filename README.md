@@ -1,4 +1,4 @@
-# Loaded 
+# Loaded [![Build Status](https://travis-ci.com/mishamyrt/loaded.svg?branch=master)][ci]
 
 Small library with zero dependencies that lets you know that the content has loaded.
 
@@ -27,3 +27,5 @@ nodeLoaded('.some-node').then((node) => {
     // Node loaded
 })
 ```
+
+[ci]: https://travis-ci.com/mishamyrt/loaded
