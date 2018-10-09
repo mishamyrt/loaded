@@ -29,7 +29,7 @@ const imagesLoaded = (node) => {
 }
 
 const nodeLoaded = (selector) => {
-    return new Promise(function (resolve) {
+    return new Promise((resolve) => {
         const checker = setInterval(() => {
             const node = document.querySelector(selector)
             if (node) {
