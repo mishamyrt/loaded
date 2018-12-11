@@ -72,6 +72,4 @@ Then link script to page:
         type="text/javascript"></script>
 ```
 
-And then use same way as CommonJS, functions will import automatically.
-
 [ci]: https://travis-ci.com/mishamyrt/loaded
