@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="test-images">
+        <img src="http://lorempixel.com/g/400/200/?001" alt="test image">
+        <img src="http://lorempixel.com/g/400/200/?010" alt="test image">
+        <img src="http://lorempixel.com/g/400/200/?011" alt="test image">
+    </div>
+    <img class="test-image" src="http://lorempixel.com/g/400/200/?100" alt="test image">
+    <style>
+        .test-node {
+            background-color: #000;
+            display: inline-block;
+            width: 400px;
+            height: 200px;
+        }
+    </style>
+    <script src="../../dist/loaded.js"></script>
+    <script>
+        const addNode = (className) => {
+            const node = document.createElement('div')
+            node.className = className
+            document.body.appendChild(node)
+        }
+
+        setTimeout(() => {
+            addNode('test-node')
+        }, 500)
+
+        imagesLoaded(
+            document.querySelector('.test-images')
+        ).then(() => {
+            addNode('images-loaded')
+        })
+
+        nodeLoaded(
+            '.test-node'
+        ).then(() => {
+            addNode('node-loaded')
+        })
+
+        imageLoaded(
+            document.querySelector('.test-image').src
+        ).then(() => {
+            addNode('image-loaded')
+        })
+    </script>
+</body>
+</html>

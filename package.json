@@ -4,24 +4,32 @@
   "description": "Small library without dependencies that lets you know that the content has loaded",
   "main": "index.js",
   "scripts": {
-    "test": "npm run check-codestyle && npm run build && npm run integration-tests",
+    "test": "npm run check-codestyle && npm run preintegration-tests && npm run integration-tests",
+    "build": "npx rollup -c & npx rollup -c --environment module",
     "check-codestyle": "npx eslint ./",
-    "build": "npx rollup -c & npx rollup -c --environment module"
+    "preintegration-tests": "npm run build",
+    "integration-tests": "npx mocha test/index.js --exit"
   },
   "keywords": [
     "images",
     "vanillajs"
   ],
   "author": "mishamyrt",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chromedriver": "^2.44.1",
     "eslint": "^5.6.1",
+    "mocha": "^5.2.0",
     "rollup": "^0.67.4",
     "rollup-plugin-babel": "^4.0.3",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
-    "rollup-plugin-terser": "^3.0.0"
+    "rollup-plugin-terser": "^3.0.0",
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "static-server": "^2.2.1"
   }
 }
