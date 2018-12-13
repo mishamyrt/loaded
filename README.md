@@ -1,7 +1,7 @@
 <p align="center"><img alt="Loaded" src="./img/logo.svg" style="height: 400px;"></p>
 
 [![Build Status](https://travis-ci.com/mishamyrt/loaded.svg?branch=master)][ci]
-[![npm version](https://badge.fury.io/js/mishamyrt-loaded.svg)](npm)
+[![npm version](https://badge.fury.io/js/mishamyrt-loaded.svg)][npm]
 ![David's dependencies control](https://david-dm.org/mishamyrt/loaded.svg)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a9eb138cd779475e8ca22dc265e1d6f4)](https://www.codacy.com/app/mishamyrt/loaded?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mishamyrt/loaded&amp;utm_campaign=Badge_Grade)
 
