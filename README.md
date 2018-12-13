@@ -4,7 +4,6 @@
 [![npm version](https://badge.fury.io/js/mishamyrt-loaded.svg)](npm)
 ![David's dependencies control](https://david-dm.org/mishamyrt/loaded.svg)
 
-
 Small library with zero dependencies that lets you know that the content has loaded.
 
 The library contains 3 functions that return a promise.
@@ -69,9 +68,9 @@ require([
 })
 ```
 
-### In–browser
+### Browser
 
-Then link script to page:
+Just link script to page:
 ```html
 <script src="path/to/loaded.js"
         type="text/javascript"></script>
