@@ -1,6 +1,9 @@
 <p align="center"><img alt="Loaded" src="./img/logo.svg" style="height: 400px;"></p>
 
 [![Build Status](https://travis-ci.com/mishamyrt/loaded.svg?branch=master)][ci]
+[![npm version](https://badge.fury.io/js/mishamyrt-loaded.svg)](npm)
+![David's dependencies control](https://david-dm.org/mishamyrt/loaded.svg)
+
 
 Small library with zero dependencies that lets you know that the content has loaded.
 
@@ -75,3 +78,4 @@ Then link script to page:
 ```
 
 [ci]: https://travis-ci.com/mishamyrt/loaded
+[npm]: https://www.npmjs.com/package/mishamyrt-loaded
