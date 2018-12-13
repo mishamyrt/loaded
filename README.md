@@ -1,4 +1,8 @@
-# Loaded [![Build Status](https://travis-ci.com/mishamyrt/loaded.svg?branch=master)][ci]
+<p align="center"><img alt="Loaded" src="./img/logo.svg" style="height: 400px;"></p>
+
+[![Build Status](https://travis-ci.com/mishamyrt/loaded.svg?branch=master)][ci]
+[![npm version](https://badge.fury.io/js/mishamyrt-loaded.svg)](npm)
+![David's dependencies control](https://david-dm.org/mishamyrt/loaded.svg)
 
 Small library with zero dependencies that lets you know that the content has loaded.
 
@@ -6,7 +10,21 @@ The library contains 3 functions that return a promise.
 
 * `imagesLoaded` — Waiting for all the images in the node
 * `imageLoaded` — Waiting for the picture on link
-* `nodeLoaded` — Waiting for the appearance of the node in DOM by selector. Useful when using Knockout.js and other asynchronous libraries.
+* `nodeLoaded` — Waiting for the appearance of the node in DOM by selector. Useful when using Knockout.JS and other asynchronous libraries.
+
+## Usage
+
+`Loaded` is distributed in the form of a Common.JS module, AMD module as well as in the form of IFFE for browser usage.
+
+### Common.JS
+
+Use npm:
+
+```sh
+$ npm install mishamyrt-loaded --save
+```
+
+And then import to your project:
 
 ```js
 const { imagesLoaded,
@@ -28,4 +46,35 @@ nodeLoaded('.some-node').then((node) => {
 })
 ```
 
+### AMD
+
+[Download the repository code](https://github.com/mishamyrt/loaded/archive/master.zip) and move `dist/loaded.amd.js` to the desired directory.
+
+Then link scripts to page:
+```html
+<script src="path/to/require.js"
+        type="text/javascript"></script>
+<script src="path/to/loaded.amd.js"
+        type="text/javascript"></script>
+```
+
+```js
+require([
+    'loaded/images',
+    'loaded/image',
+    'loaded/node',
+], function (imagesLoaded, imageLoaded, nodeLoaded) {
+    // Code here
+})
+```
+
+### Browser
+
+Just link script to page:
+```html
+<script src="path/to/loaded.js"
+        type="text/javascript"></script>
+```
+
 [ci]: https://travis-ci.com/mishamyrt/loaded
+[npm]: https://www.npmjs.com/package/mishamyrt-loaded

@@ -1,4 +1,4 @@
-const { getImagesUrl } = require('./helpers')
+const { getImagesUrl } = require('./helpers.js')
 
 const imageLoaded = (url) => {
     return new Promise((resolve) => {
@@ -40,9 +40,8 @@ const nodeLoaded = (selector) => {
     })
 }
 
-
 module.exports = {
-    imagesLoaded,
-    imageLoaded,
-    nodeLoaded,
+    imageLoaded: imageLoaded,
+    imagesLoaded: imagesLoaded,
+    nodeLoaded: nodeLoaded,
 }
