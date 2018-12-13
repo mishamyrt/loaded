@@ -1,4 +1,6 @@
-# Loaded [![Build Status](https://travis-ci.com/mishamyrt/loaded.svg?branch=master)][ci]
+<p align="center"><img alt="Loaded" src="./img/logo.svg" style="height: 400px;"></p>
+
+[![Build Status](https://travis-ci.com/mishamyrt/loaded.svg?branch=master)][ci]
 
 Small library with zero dependencies that lets you know that the content has loaded.
 
