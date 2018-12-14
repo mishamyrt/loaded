@@ -12,7 +12,10 @@
   },
   "keywords": [
     "images",
-    "vanillajs"
+    "vanillajs",
+    "util",
+    "front-end",
+    "web"
   ],
   "author": "mishamyrt",
   "license": "MIT",
