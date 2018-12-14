@@ -1,4 +1,4 @@
-<p align="center"><img alt="Loaded" src="./img/logo.svg" style="height: 400px;"></p>
+<p align="center"><img alt="Loaded" src="https://mishamyrt.github.io/loaded/img/logo.svg" style="height: 400px;"></p>
 
 [![Build Status](https://travis-ci.com/mishamyrt/loaded.svg?branch=master)][ci]
 [![npm version](https://badge.fury.io/js/mishamyrt-loaded.svg)][npm]
