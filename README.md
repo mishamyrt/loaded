@@ -1,20 +1,21 @@
-<p align="center"><img alt="Loaded" src="./img/logo.svg" style="height: 400px;"></p>
+<p align="center"><img alt="Loaded" src="https://mishamyrt.github.io/loaded/img/logo.svg" style="height: 400px;"></p>
 
 [![Build Status](https://travis-ci.com/mishamyrt/loaded.svg?branch=master)][ci]
-[![npm version](https://badge.fury.io/js/mishamyrt-loaded.svg)](npm)
+[![npm version](https://badge.fury.io/js/mishamyrt-loaded.svg)][npm]
 ![David's dependencies control](https://david-dm.org/mishamyrt/loaded.svg)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a9eb138cd779475e8ca22dc265e1d6f4)](https://www.codacy.com/app/mishamyrt/loaded?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mishamyrt/loaded&amp;utm_campaign=Badge_Grade)
 
 Small library with zero dependencies that lets you know that the content has loaded.
 
 The library contains 3 functions that return a promise.
 
-* `imagesLoaded` — Waiting for all the images in the node
-* `imageLoaded` — Waiting for the picture on link
-* `nodeLoaded` — Waiting for the appearance of the node in DOM by selector. Useful when using Knockout.JS and other asynchronous libraries.
+  * `imagesLoaded` — Waiting for all the images in the node
+  * `imageLoaded` — Waiting for the picture on link
+  * `nodeLoaded` — Waiting for the appearance of the node in DOM by selector. Useful when using Knockout.JS and other asynchronous libraries.
 
 ## Usage
 
-`Loaded` is distributed in the form of a Common.JS module, AMD module as well as in the form of IFFE for browser usage.
+The library is distributed in the form of a Common.JS module, AMD module as well as in the form of IFFE for browser usage.
 
 ### Common.JS
 
