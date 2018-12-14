@@ -15,7 +15,7 @@ The library contains 3 functions that return a promise.
 
 ## Usage
 
-`Loaded` is distributed in the form of a Common.JS module, AMD module as well as in the form of IFFE for browser usage.
+The library is distributed in the form of a Common.JS module, AMD module as well as in the form of IFFE for browser usage.
 
 ### Common.JS
 
